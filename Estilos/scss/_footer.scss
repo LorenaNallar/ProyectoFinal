@@ -1,0 +1,62 @@
+
+/*configuración de pie de página*/
+#pie 
+{
+    
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 25px;
+
+    color: $colorLetraPie;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: medium;
+
+    background: $colorPie;
+    background: $radialPie;
+
+    .contenedorPie
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    /*mixin para generar las secciones del pie de página*/
+    @mixin seccionesPie($seccion,$posicion)
+    {
+        .contenedorPie__#{$seccion}
+        {
+            @extend .contenedorPie;
+            @if $seccion==contacto
+            {
+                order: $posicion;
+            }
+            @else if $seccion==mapa
+            {
+                order: $posicion;
+                #pie__imagen--mapa
+                {@extend #encabezado__logo;}
+            }
+            @else if $seccion==redes
+            {
+                order: $posicion;
+                #pie__imagen--redes
+                {@extend #encabezado__logo;}
+            }
+            @else if $seccion==puna
+            {
+                order: $posicion;
+                text-decoration: underline;
+                font-size: large
+            }
+        }
+    }
+    @include seccionesPie(contacto,1);
+    @include seccionesPie(mapa,2);
+    @include seccionesPie(puna,4);
+    @include seccionesPie(redes,3);
+}
+

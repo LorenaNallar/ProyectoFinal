@@ -1,0 +1,99 @@
+@import "_variables";
+@import "_encabezado";
+@import "_contenedores";
+@import "_footer";
+@import "_responsive";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    
+    background: $colorBody;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: medium;
+}
+
+h2
+{
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: large;
+    text-align: center;
+    color:blue;
+}
+
+h3
+{
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: large;
+    text-align: center;
+    color:blue;
+}
+
+main.principal__contenido
+{
+    margin: 15px;
+    border-radius: 15px;
+    border: solid;
+    background-color: rgb(240, 246, 247);
+    div.principal__contenido--gris
+    {
+        background-color: cadetblue;
+        h2.titulos
+        {
+            font-size: larger;
+            color: blue;
+        }
+    }
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+img.inscripcion__imagen
+{
+    width: 300px;
+    height: 300px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: aparecer;
+}
+
+
+@keyframes aumentar
+{
+    0%{background-color: #c5eec5; font-size: medium;}
+    25%{background-color: #95eb95; font-size: larger;}
+    75%{background-color: #69f069; scale:(2);}
+    100%{background-color: #40f140}    
+
+} 
+
+
+
+@keyframes aparecer 
+{
+    0%
+    {
+        opacity: 0;
+        
+    }
+    
+    100%
+    {
+        opacity:1;
+        
+    }
+
+}
+

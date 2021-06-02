@@ -1,0 +1,107 @@
+/*contenedor general*/
+.contenedor
+{
+    margin: 10px;
+    padding: 10px;
+
+    align-items: center;
+   
+    /*fuentes*/ 
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: medium;
+}
+
+/*contenedores columna*/
+.contenedorColumna
+{   
+    @extend.contenedor;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    a
+    {
+        color: darkblue;
+        font-size: medium;
+    }
+    
+    /*listas contenedores columna*/
+    ul.contenedorColumna__lista
+    {
+        list-style: none;
+        text-align: center;
+        /*item de los contenedores columnas*/
+        li.lista__item--item--comun
+        {
+            background-color: aliceblue;
+            align-items: center;
+            p
+            {
+                color:#304608;
+            }
+        
+        }
+        /*precio de los contenedores columnas*/
+        li.contendorColumna__item--precio
+        {
+            color:white;
+            background-color: #082546;
+            width: 80%;
+        }
+        /*titulo de los contenedores columnas*/
+        li.contenedorColumna__item--titulo
+        {
+            
+            background-color: #6497F5;
+            p
+            {
+                color: #082546;
+                font-size: large;
+            }
+        }
+        /*titulo grande de los contenedores columnas*/
+        li.contenedorColumna__itemTituloGrande 
+        {
+            background-color: #6497F5;
+            p 
+            {
+                color:#082546;
+                font-size:larger;
+            }
+        }
+    }
+}
+/*contenedores fila*/
+.contenedorFila
+{
+    @extend.contenedor;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    color: black;
+
+    /*fuentes*/ 
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: medium;
+
+    ul.contenedorFila__lista
+    {
+        list-style: none;
+        background-color: aliceblue;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+}
+
+
+
+

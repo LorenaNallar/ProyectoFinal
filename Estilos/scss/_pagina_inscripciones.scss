@@ -1,0 +1,42 @@
+
+$colorSectionInscripciones: #e7ecec;
+/*contenedor de inscripciones */
+section
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: $colorSectionInscripciones ;
+    width: 80%;
+    height: 50%;
+    padding: 30px;
+    margin: auto;
+    /*contenedor de la carrera a inscribir*/
+    div.carreraInscribir__bloque 
+    {
+        order: 2;
+        flex: 21 1 auto;
+        align-self:auto;
+        min-width: 0;
+        min-height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+        .carreraInscribir__lista ul li
+        {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+        }
+        img.carreraInscribir__imagen
+        {
+            width: 100px;
+            height: 100px;
+        }
+}
+
+

@@ -1,0 +1,113 @@
+/**responsive**/
+
+@media (min-width:900px)
+{
+    body
+    {
+        background: #6c81a3;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 990px)
+{
+    body
+    {
+        background: #416fb9;
+        font-size: small;
+    }
+
+    .encabezado
+    {
+        font-weight: normal;
+        font-size: medium;
+        color:blue;
+    }
+
+    
+    #encabezado__logo
+    {
+        display: none;
+    }
+
+    .contenedorFila
+    {
+        display:flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+
+        color: black;
+        list-style: none;
+ 
+    
+    }
+
+    img.inscripcion__imagen
+    {
+        display: none;
+    }
+}
+
+@media(max-width:700px)
+{
+
+    body
+    {
+        background: #ccd2dd;
+        font-family: 'Montserrat';
+        font-size: smaller;
+    }
+    .encabezado
+    {
+        margin: 10px;
+        padding: 10px;
+   
+        display: block;
+      
+
+        align-items: center;
+   
+        color:#fff;
+        font-weight: bold;
+       
+        font-size: small;
+    }
+    #pie 
+    {
+          
+        display: block;
+                  
+        align-items: center;
+        list-style: none;
+      
+      
+        color: #fff;
+
+        font-size: small;
+         
+    }
+
+    .encabezado
+{
+   
+    color:rgb(255, 255, 255);
+      
+    font-weight: normal;
+    font-size: small;
+  
+}
+#encabezado__logo
+    {
+        display: none;
+    }
+
+    .contenedorFila
+    {
+    display:flex;
+    flex-direction: column;
+    color: black;
+    list-style: none;
+ 
+    
+    }
+}

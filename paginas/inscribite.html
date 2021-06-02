@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <!--bootstrap-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--Estilos-->
+    <link rel="stylesheet" href="../Estilos/css/estilos.css">
+    <title>Inscribite</title>
+</head>
+
+<body>
+<div class="container">
+  <!--encabezado-->
+    <!--ENCABEZADO-->
+    <header>
+      <div class="row encabezado">
+          <!--logo-->
+          <div class="col-lg-1 align-self-start" >
+              <img id="encabezado__logo" src="../Imagenes/logo.JPG" alt ="logo">
+          </div>
+          <!--Titulo-->
+          <div class="col-lg-1 align-self-center">
+              <h1>FC Running</h1>  
+          </div>
+          <!--menu-->
+          <div class="col-lg-10 align-self-end">
+              <div class="dropdown">
+                  <button type="button" class="btn menu__boton btn-sm">
+                      <a class="nav-link" href="#">Inicio</a>
+                  </button>
+                  <button type="button" class="btn menu__boton btn-sm" data-toggle="dropdown">
+                      <a class="nav-link menu__boton dropdown-toggle" href="./paginas/carreras.html">Carreras</a>
+                  </button>
+                      <div class="dropdown-menu menu__boton">
+                          <a class="dropdown-item menu__boton btn-sm" href="./chicoana_trail.html">Chicoana Trail</a>
+                          <a class="dropdown-item menu__boton btn-sm" href="./chicoana_vertical.html">Chicoana Vertical</a>
+                          <a class="dropdown-item menu__boton btn-sm" href="./nocturna_salta.html">Nocturna Salta</a>
+                      </div>
+                  <button type="button" class="btn menu__boton btn-sm">
+                      <a class="nav-link" href="./fc_running.html">FC Running</a>
+                  </button>
+                  <button type="button" class="btn menu__boton btn-sm">
+                      <a class="nav-link" href="./fc_gym.html">FC Gym</a>
+                  </button>
+                  <button type="button" class="btn menu__boton btn-sm">
+                      <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </button>
+                  <button type="button" class="btn menu__boton btn-sm">
+                      <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </header>
+ 
+  <!--datos de inscripción-->   
+  <div class="row">
+    <main class="col-lg-12 principal__contenido">
+        <fieldset>
+            <legend>Mis datos</legend>
+            <label> Nombre
+                <input type = "text" name = Nombre>
+            </label>
+            <label> Correo electrónico
+                <input class= "textoMinuscula" type = "text" name = Correo>
+            </label>
+            <label> Provincia - Pais
+                <input type = "text" name = paisprovincia>
+            </label>
+        </fieldset>
+    </main>
+  </div>
+  <!--datos de la carrera-->
+  <div class="row"> 
+      <main class="col-lg-12 principal__contenido">
+        <fieldset>
+            <legend>Carrera</legend>
+            <label> Carrera
+                <input type = "text" name = carrera data-toggle="tooltip" data-placement="top" title="Elegi una carrera!">
+            </label>
+            <label> Distancia
+                <input class= "textoMinuscula" type = "text" name = distancia data-toggle="tooltip" data-placement="top" title="Ahora una distancia!">
+            </label>
+            <label> Talle remera
+                <input type = "text" name = remera>
+            </label>
+            <label> Lugar de Pago: 
+              <input type = "text" name = lugar>
+            </label>
+           
+        </fieldset>
+      </main>
+  </div>
+ <!--Mensaje para la inscripción-->
+ <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#info">
+    Donde podés pagar...
+  </button>
+  <div id="info" class="collapse">FC Gym Belgrano 1595 - de 09:00 a 22:00</div>
+
+</div>
+  <!-- Confirmar inscripción -->
+  <div class="row">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      ¿Confirmar inscripción?
+    </button>
+  </div>
+
+  <!-- confirmación inscripción -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Cabecera -->
+          <div class="modal-header">
+            <h4 class="modal-title">Confirmación de Inscripción</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <!-- Ventana -->
+          <div class="modal-body">
+            ¿Desea confirmar la inscripción?
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Si</button>
+            <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+</div>
+<!--bs-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

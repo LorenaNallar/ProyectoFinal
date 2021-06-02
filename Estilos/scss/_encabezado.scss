@@ -1,0 +1,61 @@
+/*configuración encabezado*/
+.encabezado
+{
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    color:$colorLetraEncabezado;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: medium;
+
+    background: $colorEncabezado;
+    background: $radialEncabezado;
+
+    #encabezado__logo
+    {
+        width: 100%; 
+        height: 100%;
+        align-items: center;
+        transition: 2s;
+        
+    }
+
+    #encabezado__logo:hover
+    {
+        transform: rotate(45deg);
+    }
+
+
+
+    /*enlaces menu*/
+   
+    h1
+    {
+        font-size: larger;
+        text-align: center;
+        color:blue;
+    }
+    .boton
+    {
+        border-radius: 10px;
+        padding: 10px;
+    
+    }
+
+    .menu__boton
+    {
+    @extend .boton;
+    background-color: rgb(27, 38, 87);
+    font-size: smaller;
+        a
+        {color:white;}
+        
+    }
+
+}

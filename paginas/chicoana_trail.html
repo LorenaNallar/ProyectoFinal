@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <!--bootstrap-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--Estilos-->
+    <link rel="stylesheet" href="../Estilos/css/estilos.css">
+
+    <title>Chicoana Trail</title>
+    
+</head>
+<body>
+    <div class="container">
+    <!--ENCABEZADO-->
+    <header>
+        <div class="row encabezado">
+            <!--logo-->
+            <div class="col-lg-1 align-self-start" >
+                <img id="encabezado__logo" src="../Imagenes/logo.JPG" alt ="logo">
+            </div>
+            <!--Titulo-->
+            <div class="col-lg-1 align-self-center">
+                <h1>FC Running</h1>  
+            </div>
+            <!--menu-->
+            <div class="col-lg-10 align-self-end">
+                <div class="dropdown">
+                    <button type="button" class="btn menu__boton btn-sm">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </button>
+                    <button type="button" class="btn menu__boton btn-sm" data-toggle="dropdown">
+                        <a class="nav-link menu__boton dropdown-toggle" href="#">Carreras</a>
+                    </button>
+                        <div class="dropdown-menu menu__boton">
+                            <a class="dropdown-item menu__boton btn-sm" href="#">Chicoana Trail</a>
+                            <a class="dropdown-item menu__boton btn-sm" href="./chicoana_vertical.html">Chicoana Vertical</a>
+                            <a class="dropdown-item menu__boton btn-sm" href="./nocturna_salta.html">Nocturna Salta</a>
+                        </div>
+                    <button type="button" class="btn menu__boton btn-sm">
+                        <a class="nav-link" href="./fc_running.html">FC Running</a>
+                    </button>
+                    <button type="button" class="btn menu__boton btn-sm">
+                        <a class="nav-link" href="./fc_gym.html">FC Gym</a>
+                    </button>
+                    <button type="button" class="btn menu__boton btn-sm">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </button>
+                    <button type="button" class="btn menu__boton btn-sm">
+                        <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                    </button>
+                  
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--imagen para inscribir-->
+    <main class="principal__contenido">
+        <div class="principal__contenido--gris">
+            <ul class="contenedorColumna">
+                <li><img class="inscripcion__imagen" src="../Imagenes/inscripciones chicoana.jpeg" alt="chicoana"></li>
+                <li><a href="./inscribite.html">Inscribirme</a></li>
+            </ul>     
+        </div>
+    </main>
+    <!--pie-->
+        <footer id="pie">
+            <div class="row">
+                <!--Pagina-->
+                <div class="col-lg-12 pie_espacioPaginaPuna">
+                    <p>Desarrollado por PunaIt</p>
+                </div> 
+            </div>                 
+        </footer>
+    </div>
+</body>
+<!--bs-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
