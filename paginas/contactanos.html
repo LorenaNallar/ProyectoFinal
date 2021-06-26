@@ -6,147 +6,173 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Titulo-->
+    <title>Contactanos</title>
+
+    <!--Descripción-->
+    <meta name="description" content="Entrenamos en los lunes, miércoles y viernes y todos los días en el Gimnasio. 
+    Comunicate fcrunningsalta@gmail.com">  
+
+    <!--Keywords-->
+    <meta name="keywords" content="CONSULTA, MAIL, CONTACTO, PROFESOR, 
+    RUNNING, TEAM, EQUIPO, ENTRENAMIENTO, GIMNASIO, CARRERA">
+
     <!--fuentes-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
     <!--bootstrap-->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bs/css/bootstrap.min.css" rel="stylesheet">
     
     <!--Estilos-->
     <link rel="stylesheet" href="../Estilos/css/estilos.css">
-    <title>Contactanos</title>
+    
 </head>
 <body>
-    <div class="container">
-        <!--ENCABEZADO-->
-        <header>
-            <div class="row encabezado">
-                <!--logo-->
-                <div class="col-lg-1 align-self-start" >
-                    <img id="encabezado__logo" src="../Imagenes/logo.JPG" alt ="logo">
-                </div>
-                <!--Titulo-->
-                <div class="col-lg-1 align-self-center">
-                    <h1>FC Running</h1>  
-                </div>
-                <!--menu-->
-                <div class="col-lg-10 align-self-end">
-                    <div class="dropdown">
-                        <button type="button" class="btn menu__boton btn-sm">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </button>
-                        <button type="button" class="btn menu__boton btn-sm" data-toggle="dropdown">
-                            <a class="nav-link menu__boton dropdown-toggle" href="#">Carreras</a>
-                        </button>
-                            <div class="dropdown-menu menu__boton">
-                                <a class="dropdown-item menu__boton btn-sm" href="./chicoana_trail.html">Chicoana Trail</a>
-                                <a class="dropdown-item menu__boton btn-sm" href="./chicoana_vertical.html">Chicoana Vertical</a>
-                                <a class="dropdown-item menu__boton btn-sm" href="./nocturna_salta.html">Nocturna Salta</a>
-                            </div>
-                        <button type="button" class="btn menu__boton btn-sm">
-                            <a class="nav-link" href="./fc_running.html">FC Running</a>
-                        </button>
-                        <button type="button" class="btn menu__boton btn-sm">
-                            <a class="nav-link" href="./fc_gym.html">FC Gym</a>
-                        </button>
-                        <button type="button" class="btn menu__boton btn-sm">
-                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                        </button>
-                        <button type="button" class="btn menu__boton btn-sm">
-                            <a class="nav-link" href="#">Contactanos</a>
-                        </button>
-                       
-                    </div>
-                </div>
+    <!--encabezado de página-->
+    <header>    
+        <!--logo y redes sociales-->    
+        <div class="row encabezado__imagenes">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-3">
+                <img id="encabezado__imagenes--logo" src="../Imagenes/Logo FC.png" alt="logo">
             </div>
-        </header>
-        <!--formulario-->
-        <main class="row principal__contenido">
-            <h2>Contactanos</h2>
-            <form action = "contacto.php" method="get">
-                <fieldset class="contacto">
-                    <legend>Tus datos</legend>
-                    <label> Nombre
-                        <input type = "text" name = Nombre>
-                    </label>
-                    <label> Correo electrónico
-                        <input class= "textoMinuscula" type = "text" name = Correo>
-                    </label>
-                    <label> De donde sos? País - Provincia
-                        <input type = "text" name = paisprovincia>
-                    </label>
-                </fieldset>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-1">
+                <a href="https://www.facebook.com/fcrunningsalta/" target="_blank"><img id="encabezado__imagenes--redes" src="../Imagenes/FB (1).png" alt="facebook"></a>
+            </div>
+            <div class="col-lg-1">
+                <a href="https://www.instagram.com/fcrunningsalta" target="_blank"><img id="encabezado__imagenes--redes" src="../Imagenes/IG (1).png"  alt="instagram"></a>
+            </div>
+            <div class="col-lg-1">
+                <img id="encabezado__imagenes--redes" src="../Imagenes/Lupa (1).png" href="#" alt="lupa">
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <!--menu-->
+        <div class="row encabezado__menu">
+            <div class="col-lg-12">
+                <nav class="dropdown">
+                    <button type="button" class="btn menu__boton btn-lg">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </button>
+                    <button type="button" class="btn menu__boton btn-lg" data-toggle="dropdown">
+                        <a class="menu__boton dropdown-toggle">Carreras</a>
+                    </button>
+                    <div class="dropdown-menu menu__boton--submenu">
+                        <a class="dropdown-item  nav-link" href="../paginas/chicoana_trail.html">Chicoana Trail</a>
+                        <a class="dropdown-item  nav-link" href="../paginas/chicoana_vertical.html">Chicoana Vertical</a>
+                        <a class="dropdown-item  nav-link" href="../paginas/nocturna_salta.html">Nocturna Salta</a>
+                    </div>
+                    <button type="button" class="btn menu__boton btn-lg">
+                        <a class="nav-link" href="../paginas/fc_running.html">Running Team</a>
+                    </button>
+                    <button type="button" class="btn menu__boton btn-lg">
+                        <a class="nav-link" href="../paginas/fc_gym.html">Gimnasio</a>
+                    </button>
+                    <button type="button" class="btn menu__boton btn-lg">
+                        <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+                    </button>
+                    <button type="button" class="btn menu__boton btn-lg">
+                        <a class="nav-link" href="#">Contactanos</a>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--formulario-->
+    <div class="row contacto__contenedor">
+        <h1>Comunicate con nosotros</h1>
+        <form action = "contacto.php" method="get">
+                <!--Datos Personales-->
+                <div class="row contacto__grupo">
+                    <fieldset class="contacto">
+                        <legend class="contacto__titulo">Tus datos</legend>
+                        <label> Nombre
+                            <input type = "text" name = Nombre>
+                        </label>
+                        <label> Correo electrónico
+                            <input class= "textoMinuscula" type = "text" name = Correo>
+                        </label>
+                        <label> De donde sos?
+                            <input type = "text" name = paisprovincia>
+                        </label>
+                    </fieldset>
+                </div>
                 <!--Intereses-->
-                <fieldset class="contacto">
-                    <legend>Tu consulta</legend>
-                    <label> Queres saber mas sobre:
-                        <select name = "Tipo">
-                            <option value="Carreras">Carreras</option>
-                            <option value="Gimnacio">Gimnacio</option>
-                            <option value="Running">Running</option>
-                            <option value="Entrenamiento">Entrenamiento personalizado</option>
-                            <option value="Otra consulta">Otra consulta</option>
-                        </select>
-                    </label>
-                    <label>Escribí tu consulta:
-                        <textarea class="textoMayuscula" name="mensaje" cols="90" rows="1" minlength="5" maxlength="200" ></textarea>
-                    </label>
-                </fieldset>
+                <div class="row contacto__grupo">
+                    <fieldset class="contacto">
+                        <legend class="contacto__titulo">Tu consulta</legend>
+                        <label> Queres saber de:
+                            <select name = "Tipo">
+                                <option value="Carreras">Carreras</option>
+                                <option value="Gimnacio">Gimnacio</option>
+                                <option value="Running">Running</option>
+                                <option value="Entrenamiento">Entrenamiento personalizado</option>
+                                <option value="Otra consulta">Otra consulta</option>
+                            </select>
+                        </label>
+                        <label>Escribí tu consulta:
+                            <textarea class="textoMayuscula" name="mensaje" cols="90" rows="1" minlength="5" maxlength="200" ></textarea>
+                        </label>
+                    </fieldset>
+                </div>
                 <!--COmo nos conocieron-->
-                <fieldset class="contenedorColumna contacto">
-                    <legend>Queremos saber mas de vos?</legend>
-                    <label>Como nos conociste?</label>
-                    <label class="contacto"> 
-                        <input type='checkbox' 
-                        name='como nos conociste' value='participe' > Participe en otras carreras organizadas por FC
-                        <input type='checkbox' 
-                        name='como nos conociste' value='web' > Visité la página web
-                        <input type='checkbox' 
-                        name='como nos conociste' value='instagram' > Por instagram
-                    </label>
-                </fieldset>
-                <fieldset class=" contenedorColumna contacto">
-                    <label>Tu edad?</label>
-                    <label> 
-                        <input type='checkbox' 
-                        name='edad' value='menor de 15' > Menos de 15 años
-                        <input type='checkbox' 
-                        name='edad' value='16-30' > Entre 16 y 30
-                        <input type='checkbox' 
-                        name='edad' value='31-40' > Entre 31 y 40
-                        <input type='checkbox' 
-                        name='edad' value='mayor de 40' > Mayor de 40
-                    </label>
-                </fieldset>
-                <fieldset class="contenedorColumna contacto">
-                    <label>Podemos enviarte novedades de FC Running?</label>
-                    <input type ="radio" name = "info" value = "Si"> Si
-                    <input type ="radio" name = "info" value = "No"> NO
-                </fieldset>
+                <div class="row contacto__grupo">
+                    <fieldset class="contacto">
+                        <legend class="contacto__titulo">Nos contas mas sobre vos?</legend>
+                        <label>Como nos conociste?</label>
+                        <label> 
+                            <input type='checkbox' 
+                                name='como nos conociste' value='participe' > Participe en otras carreras organizadas por FC
+                            <input type='checkbox' 
+                                name='como nos conociste' value='web' > Visité la página web
+                            <input type='checkbox' 
+                            name='como nos conociste' value='instagram' > Por instagram
+                        </label>
+                    </fieldset>
+                    <fieldset class="contacto">
+                        <label>Tu edad?</label>
+                        <label> 
+                            <input type='checkbox' 
+                            name='edad' value='menor de 15' > Menos de 15 años
+                            <input type='checkbox' 
+                            name='edad' value='16-30' > Entre 16 y 30
+                            <input type='checkbox' 
+                            name='edad' value='31-40' > Entre 31 y 40
+                            <input type='checkbox' 
+                            name='edad' value='mayor de 40' > Mayor de 40
+                        </label>
+                    </fieldset>
+                    <fieldset class="contacto">
+                        <label>Podemos enviarte novedades de FC Running?</label>
+                        <input type ="radio" name = "info" value = "Si"> Si
+                        <input type ="radio" name = "info" value = "No"> NO
+                    </fieldset>
+                </div>
        
-                <!--Botones-->
-                <fieldset class="contacto">
-                    <legend>Enviá tu consulta o borra los datos</legend>
-                    <input type ="submit" value = "Enviar">
-                    <input type ="reset" value = "Borrar">
-                </fieldset>
-            </form>
-        </main>
-    <!--pie-->
-    <footer id="pie">
-        <div class="row">
-            <!--Pagina-->
-            <div class="col-lg-12 pie_espacioPaginaPuna">
-                <p>Desarrollado por PunaIt</p>
-            </div> 
-        </div>                 
+            <!--Botones-->
+            <fieldset class="contacto__botones">
+                <legend>Enviá tu consulta o borra los datos</legend>
+                <input type ="submit" value = "Enviar">
+                <input type ="reset" value = "Borrar">
+            </fieldset>
+        </form>
+    </div>
+    <!--pie de página-->
+    <footer id="pie" class ="row">
+        <div class="col-lg-5"></div> 
+        <div class="col-lg-2">
+            <p>Desarrollado por</p>
+        </div> 
+        <div class="col-lg-2">
+            <img id="pie__imagenes--logoPuna" src="../Imagenes/PUNA IT_Positivo.png" alt="punait">
+        </div>
+        <div class="col-lg-5"></div>
     </footer>
-</div>
-    </div>   
-<!--bs-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--bs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html> 

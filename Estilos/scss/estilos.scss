@@ -3,12 +3,12 @@
 @import "_contenedores";
 @import "_footer";
 @import "_responsive";
+@import "_pagina_contacto";
 
 *
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body
@@ -17,83 +17,185 @@ body
     background: $colorBody;
     font-weight: bold;
     font-family: 'Montserrat';
-    font-size: medium;
-}
-
-h2
-{
-    margin-top: 10px;
-    padding-top: 10px;
     font-size: large;
     text-align: center;
-    color:blue;
-}
 
-h3
-{
-    margin-top: 10px;
-    padding-top: 10px;
-    font-size: large;
-    text-align: center;
-    color:blue;
-}
-
-main.principal__contenido
-{
-    margin: 15px;
-    border-radius: 15px;
-    border: solid;
-    background-color: rgb(240, 246, 247);
-    div.principal__contenido--gris
+   
+    h1
     {
-        background-color: cadetblue;
-        h2.titulos
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: larger;
+    text-align: center;
+    color:#A8CF45;
+    font-weight: bold;
+    font-family: 'Roboto';
+    font-size: larger;
+    }
+
+    h2
+    {
+    margin-top: 10px;
+    padding-top: 10px;
+    
+    text-align: center;
+    color:#A8CF45;
+
+    font-weight: bold;
+    font-family: 'Roboto';
+    font-size: large;
+    }
+
+    h3
+    {
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: medium;
+    text-align: center;
+    color:#A8CF45;
+    font-weight: bold;
+    font-family: 'Roboto';
+
+    align-items: center;
+    }
+
+    img.imagenes__profes
+    {
+        width: 80%;
+        height: 80%;
+    }
+
+    .principal__contenido
+    {
+        align-items: center;
+        p
         {
-            font-size: larger;
-            color: blue;
+            text-align: center;
+        }           
+        #carousel__contenedor
+        {
+        margin-top: 850px;
+        padding: 10px;
+        margin: 10px;
+        align-items: center;
         }
+
+        .carousel-inner img 
+        {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        }
+
+    }
+
+    section 
+    {
+       
+        padding: 20px;
+        margin: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        span
+        {
+            padding-top: 50px;
+            margin-top: 40px;
+            text-align: justify;
+            color: rgb(44,96,211);
+        }
+        .galeria
+        {
+            color: #e9f5e9;
+            padding: 20px;
+            margin: 20px;
+            img.galeria__img
+            {
+            width: 100%;
+            height: 100%;
+            }
+
+        }
+    }
+
+    .inscripciones
+    {
+        display:flex;
+        flex-direction: row;
+        align-content: space-around;
+         
+        padding: 20px;
+        margin: 20px;
+
+        a
+        {
+            background: rgb(44,96,211);
+            color: #A8CF45;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-name: aumentar__inscripcion;
+        }
+       
+    }
+
+    .novedades
+    {
+        display:flex;
+        flex-direction: row;
+        align-content: space-around;
+         
+        padding: 20px;
+        margin: 20px;
+
+        color: #2C60D3;
+        
+        border-bottom: 3px solid $colorPie;
+        border-top: 3px solid $colorPie;
+ 
+        img.novedades__img
+        {
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+            
+        }
+        .boton
+        {
+            background-color: #A8CF45;
+            font-size: medium;
+            font-family: 'Roboto';
+        }
+    }
+    .camino
+    {
+    margin-top: 10px;
+    }
+
+    img.inscripcion__imagen
+    {
+    width: 30%;
+    height: 30%;
+  
+    }
+    .titulo
+    {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #5f96e6;
+    color: #e9f5e9;
     }
 }
 
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
-
-img.inscripcion__imagen
+@keyframes aumentar__inscripcion
 {
-    width: 300px;
-    height: 300px;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: aparecer;
-}
-
-
-@keyframes aumentar
-{
-    0%{background-color: #c5eec5; font-size: medium;}
-    25%{background-color: #95eb95; font-size: larger;}
-    75%{background-color: #69f069; scale:(2);}
-    100%{background-color: #40f140}    
+    0%{color: #A8CF45; background-color: rgb(44,96,211) ; font-size: small;}
+    25%{color: #95eb95; background-color: rgb(44,96,211); font-size: medium; scale:(0,1)}
+    75%{color: #2C60D3; background-color: #A8CF45; font-size: medium; scale:(0,2);}
+    100%{color: #2C60D3; background-color: #A8CF45; font-weight: bold; font-family: 'Roboto';scale:(0,3)}    
 
 } 
 
 
-
-@keyframes aparecer 
-{
-    0%
-    {
-        opacity: 0;
-        
-    }
-    
-    100%
-    {
-        opacity:1;
-        
-    }
-
-}
 

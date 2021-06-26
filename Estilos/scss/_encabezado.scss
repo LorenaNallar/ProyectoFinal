@@ -1,61 +1,94 @@
 /*configuración encabezado*/
-.encabezado
+
+header
 {
-    margin: 10px;
-    padding: 10px;
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $colorBody;
+
 
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 
     color:$colorLetraEncabezado;
     font-weight: bold;
     font-family: 'Montserrat';
-    font-size: medium;
+    font-size: small;
 
-    background: $colorEncabezado;
-    background: $radialEncabezado;
-
-    #encabezado__logo
+    .encabezado__imagenes
     {
-        width: 100%; 
-        height: 100%;
-        align-items: center;
-        transition: 2s;
-        
-    }
+        margin-top: 10px;
+        margin-bottom: 10px;
+        #encabezado__imagenes--logo
+        {
+            width: 50%; 
+            height: 70%;
+            align-items: center;
+            transition: 2s;
+            margin:5px;
+        }
+        #encabezado__imagenes--logo:hover
+        {
+            transform: scale(1.5,1.5);
+        }
 
-    #encabezado__logo:hover
+        #encabezado__imagenes--redes
+        {
+            width: 30%; 
+            height: 30%;
+            align-items: flex-end;
+            transition: 2s;
+            margin-top:15px;
+        }
+        #encabezado__imagenes--redes:hover
+        {
+            transform: scale(2,2);
+        }
+    }
+    .encabezado__menu
     {
-        transform: rotate(45deg);
+        background: $colorEncabezado;
+        background: $radialEncabezado;
+        .boton
+        {
+            margin-left:15px;
+            margin-right: 15px;           
+        }
+    
+        .menu__boton
+        {
+        @extend .boton;
+            a
+            {color:white;}
+            
+        }
+
+        .menu__boton--submenu
+        {
+            @extend .menu__boton;
+              
+            background-color: $colorEncabezado;
+            background: $radialEncabezado;
+
+        }
+
+        .menu__boton--submenu:hover
+        {
+            @extend .menu__boton;
+            a
+            {color:black;}
+        }
     }
-
-
-
+    
     /*enlaces menu*/
    
     h1
     {
         font-size: larger;
         text-align: center;
-        color:blue;
+        color:rgb(209, 224, 214);
     }
-    .boton
-    {
-        border-radius: 10px;
-        padding: 10px;
-    
-    }
-
-    .menu__boton
-    {
-    @extend .boton;
-    background-color: rgb(27, 38, 87);
-    font-size: smaller;
-        a
-        {color:white;}
-        
-    }
-
 }

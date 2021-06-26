@@ -1,57 +1,82 @@
-.contacto__textoMayuscula
-{
-text-transform: uppercase;
-}
 
-/*texto para el formulario de contacto - Minuscula*/
-.contacto__textoMinusculas
-{
-text-transform: lowercase;
-}
 /*contenedor contacto*/
-fieldset.contacto__contenedor
+.contacto__contenedor
 {
-    padding: 30px;
-    margin: 20px;
-    border: solid 2px #218c92;
+    margin-left: 20px;
+    margin-right: 20px;
+    
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    
     align-items: center;
-    text-align: left;
-    font-family: 'Montserrat';
-    /*etiquetas del contenedor contacto*/
-    label.contacto__etiqueta
+    text-align: center;
+    font-family: 'Roboto';
+
+    border-bottom: 3px solid $colorPie;
+
+    legend 
     {
-    justify-content: center;
-    align-content: space-between;
-    text-align: left;
-    font-family: 'Montserrat';
-    border: none;
-    }
-    /*titulos del contenedor contacto*/
-    h2.contacto__titulo 
-    {align-items: center;
-    color:black
+        color: #A8CF45;
+        font-size: medium;
+
     }
 
-}
+    .contacto__textoMayuscula
+    {
+        text-transform: uppercase;
+    }
 
-fieldset.contacto
-{
-    margin-top: 5px;
-    padding-top: 5px;
-    padding-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    border: mediumblue;
-}
+    /*texto para el formulario de contacto - Minuscula*/
+    .contacto__textoMinusculas
+    {
+        text-transform: lowercase;
+    }
+    .contacto__grupo
+    {
+        border-bottom: 3px solid $colorPie;
 
-input
-{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-top: 5px;
-    margin-bottom: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+
+        color: rgb(65,111,185);
+        font-size: medium;
+
+        .contacto__titulo
+        {
+            font-size: large;
+        }
+
+        fieldset
+        {   
+            input
+            {
+                margin: 10px;
+                padding: 5px;
+            }
+            label
+            {
+                margin: 10px;
+                padding: 5px;
+            }
+        }
+    }
+
+    .contacto__botones
+    {
+        padding: 20px;
+        margin:20px;
+        input
+        {
+            color: white;
+            background-color: #A8CF45;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+    }
+
+
 }

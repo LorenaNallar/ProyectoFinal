@@ -1,15 +1,15 @@
 /*encabezado y pie de páginas colores y radiales*/
 $colorLetraEncabezado: #fff;
-$colorLetraPie: #fff;
+$colorLetraPie: #A8CF45;
 
-$colorEncabezado: rgb(65,111,185);
+$colorEncabezado: rgb(44,96,211);
 $colorPie: rgb(65,111,185);
 
-$radialEncabezado: radial-gradient(circle, rgba(65,111,185,1) 30%, rgba(112,227,111,1) 67%, rgba(2,0,36,1) 98%);
-$radialPie: radial-gradient(circle, rgba(65,111,185,1) 30%, rgba(112,227,111,1) 67%, rgba(2,0,36,1) 98%);
+$radialEncabezado: linear-gradient(90deg, rgba(44,96,211,1) 0%, rgba(59,216,234,1) 100%);
+$radialPie: linear-gradient(90deg, rgba(44,96,211,1) 0%, rgba(59,216,234,1) 100%);
 
 /*body en todas las páginas*/
-$colorBody: #416fb9;
+$colorBody: #fefffe;
 
 /*para formulario de contacto*/
 $textoMayuscula: uppercase;

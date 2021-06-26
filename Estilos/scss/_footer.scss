@@ -2,61 +2,40 @@
 /*configuración de pie de página*/
 #pie 
 {
-    
+    margin-top:50px;
+    margin-left: 20px;
+    margin-right: 20px ;
     display: flex;
     flex-direction: row;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    flex-basis: 25px;
 
     color: $colorLetraPie;
     font-weight: bold;
     font-family: 'Montserrat';
-    font-size: medium;
-
-    background: $colorPie;
-    background: $radialPie;
-
-    .contenedorPie
+    font-size: large;
+    
+    p
     {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        margin-left: 0px;
+        margin-right: 0px ;
     }
-    /*mixin para generar las secciones del pie de página*/
-    @mixin seccionesPie($seccion,$posicion)
-    {
-        .contenedorPie__#{$seccion}
+    #pie__imagenes--logoPuna
         {
-            @extend .contenedorPie;
-            @if $seccion==contacto
-            {
-                order: $posicion;
-            }
-            @else if $seccion==mapa
-            {
-                order: $posicion;
-                #pie__imagen--mapa
-                {@extend #encabezado__logo;}
-            }
-            @else if $seccion==redes
-            {
-                order: $posicion;
-                #pie__imagen--redes
-                {@extend #encabezado__logo;}
-            }
-            @else if $seccion==puna
-            {
-                order: $posicion;
-                text-decoration: underline;
-                font-size: large
-            }
+            margin-left: 0px;
+            margin-right: 0px ;
+            width: 30%; 
+            height: 50%;
+            align-items: center;
+            transition: 2s;
+            margin:5px;
         }
+    #pie__imagenes--logoPuna:hover
+    {
+        transform: scale(1.5,1.5);
     }
-    @include seccionesPie(contacto,1);
-    @include seccionesPie(mapa,2);
-    @include seccionesPie(puna,4);
-    @include seccionesPie(redes,3);
+
+
 }
 
